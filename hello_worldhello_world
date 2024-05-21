@@ -1,0 +1,27 @@
+小型 web 项目在局域网内的预览
+
+项目目录
+
+web:.
+├─index.html
+
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello world
+</body>
+</html>
+
+切换到目录 cd web，执行命令 python -m http.server，浏览器地址栏输入 localhost:8000，显示：
+hello world
+
+对于局域网的其他用户，可通过你的主机IP+端口号访问，如你的主机IP是192.168.0.1，那么将网址 192.168.0.1:8000 发送给你的同事或同学，他们也可以看到 index.html 文件渲染的内容。
